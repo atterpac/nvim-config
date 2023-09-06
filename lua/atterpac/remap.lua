@@ -30,3 +30,7 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 -- Quick Save
 vim.keymap.set("n", "<leader>w", ":update<cr>")
 vim.keymap.set("i", "<C-s>", "<Esc>:update<cr>")
+
+-- Go to Defition
+vim.keymap.set("n", "<leader>g", "<C-]>")
+vim.keymap.set("n", "<leader>r" , "<C-o>")

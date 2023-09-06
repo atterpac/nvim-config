@@ -4,7 +4,7 @@ local telescope = require('telescope')
 telescope.setup {
     defaults = {
         file_ignore_patterns = {
-            "node_modules", "build", "dist", "*.lock", ".rustup", ".cache", ".cargo", ".mozilla", ".local", ".pki", 'go/pkg'
+            "node_modules", "build", "dist", "*.lock", ".rustup", ".cache", ".cargo", ".mozilla", ".local", ".pki"
         }},
     extensions = {
         file_browser = {
@@ -18,6 +18,7 @@ telescope.setup {
 	}
 }
 }
+vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
 vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
 -- vim.keymap.set('n', '<leader>pfh', "Telescope find_files hidden=true<CR>" )
 vim.keymap.set('n', '<C-p>', builtin.git_files, {})

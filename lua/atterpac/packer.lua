@@ -58,4 +58,17 @@ return require('packer').startup(function(use)
     use {"akinsho/toggleterm.nvim", tag = '*', config = function()
   	require("toggleterm").setup()
 	end}
+
+    -- Leap
+    use ('ggandor/leap.nvim')
+
+    -- Golang
+    use 'ray-x/go.nvim'
+    use 'ray-x/guihua.lua' -- recommended if need floating window support
+    use 'neovim/nvim-lspconfig'
+    use 'nvim-treesitter/nvim-treesitter'
+
+
+    --Netrw refresh
+    use 'prichrd/netrw.nvim'
 end)
